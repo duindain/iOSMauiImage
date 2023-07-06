@@ -9,17 +9,14 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    private void downloadImage_Clicked(object sender, EventArgs e)
+    {
+        testImage.Source = new UriImageSource
+        {
+            Uri = new Uri("https://raw.githubusercontent.com/dotnet/maui/3c37d850317e80c19df3c5e754dbce12fb818c6c/Assets/icon.png"),
+            CachingEnabled = false
+        };
+    }
 }
 
 
