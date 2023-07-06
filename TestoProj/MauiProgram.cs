@@ -43,6 +43,7 @@ public static class MauiProgram
                             if (data != null)
                             {
                                 handler.PlatformView.Image = UIImage.LoadFromData(data);
+                                System.Diagnostics.Debug.WriteLine("Work around ran to recreate the image");
                             }
                         }
                     }

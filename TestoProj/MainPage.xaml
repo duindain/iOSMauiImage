@@ -5,17 +5,22 @@
              x:Class="TestoProj.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Spacing="4">
 
-    <Image
-        x:Name="testImage" />
+            <Image x:Name="testImage" />
 
-    <Button
-        x:Name="downloadImage"
-        Text="Switch"
-        Clicked="downloadImage_Clicked" />
+            <Button
+                x:Name="downloadImage"
+                Text="Switch"
+                Clicked="downloadImage_Clicked"
+                WidthRequest="150"/>
 
-</VerticalStackLayout>
+            <Button
+                Text="Fix"
+                Clicked="Button_Clicked"
+                WidthRequest="150"/>
+
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>
